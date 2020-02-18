@@ -25,5 +25,9 @@
         </li>
       {% endif %}
     </ul>
+    <form class="form-inline my-2 my-lg-0" action="{% url 'restaurant-list' %}" method="GET">
+        <input class="form-control mr-sm-2" type="text" name='q' id="Q_id" placeholder="Search here..." vlaue="{{request.GET}}">
+        <button class="btn btn-light" type="submit">Search</button>
+    </form>
   </div>
 </nav>
